@@ -51,26 +51,15 @@
   </form>
 
         <div id="tasks">
-            <div>
-                <span class="fw-bold">Task 1</span>
-                <span class="text-secondary small">2022-08-08</span>
-                <p>Going to watch netflix</p>
-
-                <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <i onClick="deleteTask(this)" class="fa-solid fa-delete-left"></i>
-                </span>
-            </div>
-            <div>
+          
                 <span class="fw-bold">Task 2</span>
                 <span class="text-secondary small">2022-08-08</span> 
                 <p>Going to watch netflix</p>
 
                 <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i onClick="editTask(this)" class="fa-solid fa-pen-to-square"  data-bs-toggle="modal" data-bs-target="#form"></i>
                     <i onClick="deleteTask(this)" class="fa-solid fa-delete-left"></i>
                 </span>
-            </div>
             
         </div>
     </div>
